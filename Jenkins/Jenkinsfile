@@ -19,6 +19,14 @@ pipeline{
                 '''
             }
         }
+         stage('git --version'){
+            steps{
+                sh '''
+                    uptime
+                    echo "server IP address: $(git --version)"
+                '''
+            }
+        }
         
     }
 }
