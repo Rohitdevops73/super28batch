@@ -23,7 +23,7 @@ pipeline{
             steps{
                 sh '''
                     git --version
-                    echo "server IP address: $(git --version)"
+                    echo "the current git version is : $(git --version)"
                 '''
             }
         }
