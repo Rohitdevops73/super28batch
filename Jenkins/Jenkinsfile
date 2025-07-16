@@ -22,7 +22,7 @@ pipeline{
          stage('git --version'){
             steps{
                 sh '''
-                    uptime
+                    git --version
                     echo "server IP address: $(git --version)"
                 '''
             }
